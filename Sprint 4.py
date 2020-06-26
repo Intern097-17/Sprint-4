@@ -3,10 +3,10 @@
 
 # In[1]:
 
-
-def calculate():
+# Simple Calculator
+def calculate(): # The calculate function
     operation = input('''
-Please type in the math operation you would like to complete:
+Please type in the math operation you would like to complete: # Indicates what Mathematics symbol we gonna use
 + for addition
 - for subtraction
 * for multiplication
@@ -20,7 +20,7 @@ Please type in the math operation you would like to complete:
         print('{} + {} = '.format(number_1, number_2))
         print(number_1 + number_2)
 
-    elif operation == '-':
+    elif operation == '-':                                 # In this Sprint i make use of an elif statement which allows me to check for multiple expression
         print('{} - {} = '.format(number_1, number_2))
         print(number_1 - number_2)
 
@@ -36,7 +36,7 @@ Please type in the math operation you would like to complete:
         print('You have not typed a valid operator, please run the program again.')
 
     # Add again() function to calculate() function
-    again()
+    again() # Essentially Python utilises this function to repeat stuff
 
 def again():
     calc_again = input('''
@@ -47,7 +47,7 @@ Please type Y for YES or N for No
     if calc_again.upper() == 'Y':
         calculate()
     elif calc_again.upper() == 'N':
-        print('See you soon.')
+        print('See you soon.')       # Essentially this is the exit function
     else:
         again()
 
